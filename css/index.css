@@ -1,0 +1,24 @@
+main h2 {
+  background-color: #00482B;
+  color: #CBA052;
+}
+
+main img {
+  float: right;
+}
+
+main input[type="text"] + span + label {
+  float: left;
+  width: 8em;
+  text-align: left;
+}
+
+main input[type="text"] {
+  margin-left: 1em;
+  margin-bottom: .5em;
+}
+
+span {
+  margin-left: .5em;
+  color: red;
+}

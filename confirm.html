@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Wright State Raider Tee</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header>
+      <h1>Wright State Raiders Tee</h1>
+    </header>
+    <main>
+      <h2>Your order was received on </h2>
+    </main>
+    <footer>Hayden mankin - CS2800 Project 3 - Spring 2020</footer>
+    <script>
+    var d = new Date(); 
+    document.getElementsByTagName("h2")[0].innerHTML += d.toLocaleDateString("en-US", { 
+      year: "numeric",
+      month: "long",
+      day: "numeric"
+    }) + 
+    " at " + 
+    (d.getHours()%12==0?12:d.getHours()) + ":" + 
+    d.getMinutes().toString().padStart(2, "0") + 
+    (d.getHours() > 11? " pm" : " am"); 
+    </script>
+  </body>
+</html>

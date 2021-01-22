@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Wright State Raider Tee</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="scripts/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Wright State Raiders Tee</h1>
+    </header>
+    <main>
+      <form id="order_form" name="order_form" action="confirm.html" method="get">
+        <img src="images/shirt_black.png" alt="black raider tee">
+        
+        <h2>Select your color</h2>
+        <input type="radio" name="color" id="color_black" value="black" checked>
+        <label for="color_black">Black</label>
+        <br>
+        <input type="radio" name="color" id="color_mustard" value="mustard">
+        <label for="color_mustard">Mustard</label>
+        <br>
+        <input type="radio" name="color" id="color_green" value="green">
+        <label for="color_green">Green</label>
+        <br>
+        
+        <h2>Choose your size:</h2>
+        <select name="size">
+          <option value="extra large">Extra Large</option>
+          <option value="large">Large</option>
+          <option value="medium">Medium</option>
+          <option value="small">Small</option>
+        </select>
+        
+        <h2>Provide your shipping information:</h2>
+        
+        <input type="text" name="name" id="name"><span></span>
+        <label for="name">Name</label>
+        <br>
+        <input type="text" name="phone" id="phone"><span></span>
+        <label for="phone">Phone Number</label>
+        <br>
+        <input type="text" name="email" id="email"><span></span>
+        <label for="email">Email</label>
+       
+        <br>
+        <textarea name="special" placeholder="Enter special instructions here" rows="3" cols="60"></textarea>
+        
+        <h2>Sign up for our mailing lists!</h2>
+        <input type="checkbox" name="signup" id="promo" value="promo">
+        <label for="promo">Promotions</label>
+        <br>
+        <input type="checkbox" name="signup" id="new" value="new">
+        <label for="new">New Products</label>
+        <br>
+        <input type="checkbox" name="signup" id="catalog" value="catalog">
+        <label for="catalog">Catalog (quarterly)</label>
+        <br>
+        <br>
+        
+        <input type="button" name="submitButton" id="submitButton" value="Submit Order">
+        <input type="button" name="resetButton" id="resetButton" value="Clear Form">
+      </form>
+    </main>
+    <footer>Hayden mankin - CS2800 Project 3 - Spring 2020</footer>
+  </body>
+</html>

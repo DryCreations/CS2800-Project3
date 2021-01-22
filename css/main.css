@@ -1,0 +1,26 @@
+body {
+  width: 800px;
+  margin: auto;
+  color: #00482B;
+}
+
+header {  
+  padding: 10px;
+}
+
+header, footer {
+  background-color: #00482B;
+  text-align: center;
+  color: #CBA052;
+}
+
+footer {
+  clear: both;
+}
+
+main {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
